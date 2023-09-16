@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Lugrasimo&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mooli', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+   
+}
+
+.presentacao{
+    display: flex;
+    position: relative;
+    background-image: url(image/bg_presentacao.png);
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.presentacao ul{
+    position: absolute;
+    right: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.presentacao ul li{
+    list-style: none;
+}
+
+.presentacao ul li a{
+    padding: 5px 15px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    transform: scale(1.1);
+
+}
+
+.presentacao ul li{
+    transition: transform 0.4s
+}
+
+.presentacao ul li:hover{
+    transform: scale(1.3);
+}
+.logo{
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 100px;
+    width: 100px;
+}
+
+.logo img{
+    height: 70px;
+}
+
+.secunda-linha{
+    position: absolute;
+    white-space: nowrap;
+    display: flex;
+    margin: 0 7% ;
+    width: 90%;
+    height: 300px;
+    bottom: 120px;
+
+}
+.imagens{
+    min-width: 300px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    
+}
+
+.imagens img{
+    position: absolute;
+    border-radius:15px;
+    transition: opacity 800ms;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.imagens img.selected{
+    opacity: 1;
+}
+.botoes{
+    align-self: center;
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+    
+}
+
+.botoes a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin: 30px;
+    padding: 15px 30px;
+    border : 1px solid #2eb3a1;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.botoes a:hover{
+    background: #bca95b;
+    transform: scale(1.2)
+}
+
+.descricao{
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+   
+}
+.descricao p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.produtos{
+    width: 80%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75); 
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
+    margin: 0 auto;
+
+}
+.produtos h2{
+    
+    font-weight: 400;
+    text-align:  center;
+    margin-top: 50px;
+   padding-top: 20px;
+}
+
+.container{
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cupcake{
+    margin-top: 50px;
+    width: 300px;
+    transition: transform 0.3s;
+
+    
+  
+}
+.cupcake:hover{
+    transform: scale(1.1);
+}
+
+.cupcake img{
+    border-radius: 15px 15px 0px 0px;
+    width: 300px;
+    height: 300px;
+}
+
+.desc-cupcake{
+    color: #2c2a2a;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+    padding: 5% 10%;
+    background-image: url(image/bg_presentacao.png);
+    margin: 0 auto;
+
+}
+.botao-cta{
+    text-align: center;
+    border-radius: 30px;
+    border : 1px solid #2eb3a1;
+    padding: 15px 20px;
+    border-radius: 20px;
+    transition: .4s; 
+}
+
+.botao-cta:hover{
+    transform: scale(1.2);
+    background: #bca95b;
+}
+
+.botao-cta a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    width: 200px;
+    
+}
+
+.caixa-mail{
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.caixa-mail label{
+    margin: 10px 20px;
+}
+
+.caixa-mail input{
+    line-height: 40px;
+    font-family: 'Mooli', sans-serif;
+    margin-top: 20px;
+    border-radius: 15px;
+    border-style: none; 
+    outline: none;
+}
+
+
+.caixa-mail p{
+    text-align: center;
+   
+    color: #fff;
+    margin-bottom:  20px;
+
+}
+
+.caixa-mail a{
+    /* position: absolute; */
+    display: inline-block;
+   
+    text-decoration: none;
+    border-radius: 30px;
+    border : 1px solid #2eb3a1;
+    margin-top: 20px;
+    margin-left: 140px;
+    padding: 10px 30px;
+    text-align: center;
+    color: #fff;
+    transition: .4s;
+
+}
+
+.caixa-mail a:hover{
+    background: #bca95b;
+    transform: scale(1.2)
+}
